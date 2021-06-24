@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+/* font-family: 'Inconsolata', monospace; */
+/* font-family: 'Space Mono', monospace; */
+
+body {
+  /* margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+header {
+  margin-bottom: 3%;
+  place-self: flex-start;
+}
+
+header > p {
+  font-family: 'Inconsolata', monospace;
+  margin: 40px 106px;
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+}
+
+img {
+  width: 390px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.astronaut {
+  margin-right: 8.19%;
+  margin-left: 10%;
+}
+
+#title {
+  font-family: 'Space Mono', monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 95px;
+  width: 644px;
+  height: 190px;
+  letter-spacing: -0.035em;
+  color: #333333;
+}
+
+#text {
+  font-family: 'Space Mono', monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 36px;
+  letter-spacing: -0.035em;
+  color: #4f4f4f;
+  width: 381px;
+  height: 108px;
+}
+
+button {
+  width: 216px;
+  height: 68px;
+  left: 682px;
+  top: 663px;
+  background: #333333;
+  color: white;
+  margin-top: 64px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 8vh;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: -0.035em;
+  color: #bdbdbd;
+}
+a {
+  color: #bdbdbd;
+}
+@media (min-width: 2560px) {
+  body {
+    margin-top: 10vh;
+  }
+}
+
+@media (max-width: 1280px) {
+  .astronaut img {
+    width: 390px;
+  }
+  #title {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 1200px) {
+  .astronaut img {
+    width: 320px;
+  }
+  #title {
+    font-size: 3.5rem;
+    width: 530px;
+  }
+}
+
+@media (max-width: 999px) {
+  .astronaut img {
+    margin-left: 80px;
+    width: 290px;
+  }
+  #title {
+    font-size: 3rem;
+    width: 520px;
+  }
+  #text {
+    font-size: 1.2rem;
+    width: 300px;
+  }
+}
+
+@media (max-width: 867px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .astronaut img {
+    width: 423px;
+    margin-left: -200px;
+  }
+
+  #title {
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 95px;
+    width: 644px;
+    height: 190px;
+    letter-spacing: -0.035em;
+    color: #333333;
+  }
+
+  #text {
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    color: #4f4f4f;
+    width: 381px;
+    height: 108px;
+  }
+  header p {
+    margin: 40px 40px;
+  }
+  body {
+    overflow: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .astronaut img {
+    width: 350px;
+    margin-left: -80px;
+  }
+  #title {
+    font-size: 3rem;
+    width: 490px;
+  }
+
+  header p {
+    margin: 40px 40px;
+  }
+}
+
+@media (max-width: 678px) {
+  header p {
+    margin: 40px 10px;
+  }
+}
+
+@media (max-width: 535px) {
+  .astronaut img {
+    width: 280px;
+  }
+  #title {
+    font-size: 2.8rem;
+    width: 490px;
+  }
+
+  #text {
+    font-size: 1.2rem;
+    width: 370px;
+    margin-left: 10px;
+  }
+
+  header p {
+    margin: 40px 10px;
+  }
+}
+
+@media (max-width: 516px) {
+  #text {
+    margin-left: 10px;
+  }
+  #title {
+    margin-left: 10px;
+    line-height: 1.8;
+  }
+
+  #title {
+    width: 340px;
+  }
+
+  button {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 402px) {
+  .astronaut img {
+    width: 200px;
+  }
+  #title {
+    font-size: 2.4rem;
+    margin: 40px auto;
+    text-align: center;
+  }
+
+  #text {
+    font-size: 1.2rem;
+    width: 370px;
+    margin: -40px auto;
+    text-align: center;
+  }
+
+  header p {
+    margin: 40px 10px;
+  }
+  button {
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 320px) {
+  .astronaut img {
+    width: 200px;
+  }
+  #title {
+    font-size: 2rem;
+    margin: 40px auto;
+    text-align: center;
+  }
+
+  #text {
+    font-size: 1rem;
+    width: 300px;
+    margin: -40px auto;
+    text-align: center;
+  }
+
+  header p {
+    margin: 40px 10px;
+  }
+  button {
+    margin-left: 60px;
+  }
+}
