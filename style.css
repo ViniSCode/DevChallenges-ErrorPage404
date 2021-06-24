@@ -3,14 +3,6 @@
 /* font-family: 'Inconsolata', monospace; */
 /* font-family: 'Space Mono', monospace; */
 
-body {
-  /* margin: 0 auto; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -18,15 +10,25 @@ body {
   text-decoration: none;
 }
 
+.section {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 header {
   margin-bottom: 3%;
   place-self: flex-start;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
-header > p {
+.header > p {
   font-family: 'Inconsolata', monospace;
   margin: 40px 106px;
-  font-family: Inconsolata;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -73,13 +75,13 @@ img {
 }
 
 button {
-  width: 216px;
-  height: 68px;
-  left: 682px;
-  top: 663px;
+  padding: 25px 35px;
   background: #333333;
   color: white;
   margin-top: 64px;
+  cursor: pointer;
+  border: none;
+  margin: auto;
 }
 
 footer {
@@ -94,6 +96,11 @@ footer {
   letter-spacing: -0.035em;
   color: #bdbdbd;
 }
+
+.btn {
+  width: 250px;
+}
+
 a {
   color: #bdbdbd;
 }
@@ -147,25 +154,17 @@ a {
   }
 
   #title {
-    font-family: 'Space Mono', monospace;
-    font-style: normal;
-    font-weight: bold;
     font-size: 4rem;
     line-height: 95px;
     width: 644px;
     height: 190px;
-    letter-spacing: -0.035em;
     color: #333333;
   }
 
   #text {
-    font-family: 'Space Mono', monospace;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.5rem;
     line-height: 36px;
     letter-spacing: -0.035em;
-    color: #4f4f4f;
     width: 381px;
     height: 108px;
   }
@@ -193,8 +192,11 @@ a {
 }
 
 @media (max-width: 678px) {
-  header p {
-    margin: 40px 10px;
+  header .header p {
+    margin: 30px 20px;
+  }
+  header {
+    max-width: 1500px;
   }
 }
 
@@ -203,7 +205,9 @@ a {
     width: 280px;
   }
   #title {
-    font-size: 2.8rem;
+    font-size: 2.9rem;
+    margin-top: 30px;
+    line-height: 1.5;
     width: 490px;
   }
 
@@ -212,13 +216,19 @@ a {
     width: 370px;
     margin-left: 10px;
   }
-
-  header p {
-    margin: 40px 10px;
+  header .header p {
+    margin: 30px 10px;
+  }
+  .btn {
+    margin-top: 40px;
   }
 }
 
 @media (max-width: 516px) {
+  .astronaut {
+    margin-left: 100px;
+  }
+
   #text {
     margin-left: 10px;
   }
@@ -231,8 +241,11 @@ a {
     width: 340px;
   }
 
-  button {
-    margin-left: 10px;
+  header .header p {
+    margin: 30px 0 64px 24px;
+  }
+  .btn {
+    margin-top: 40px;
   }
 }
 
@@ -241,23 +254,27 @@ a {
     width: 200px;
   }
   #title {
-    font-size: 2.4rem;
+    font-size: 2rem;
+    width: 250px;
     margin: 40px auto;
     text-align: center;
   }
 
   #text {
-    font-size: 1.2rem;
-    width: 370px;
+    font-size: 1.5rem;
+    width: 340px;
     margin: -40px auto;
     text-align: center;
   }
 
-  header p {
-    margin: 40px 10px;
+  header .header p {
+    margin: 10px 10px;
+  }
+  .btn {
+    margin: 140px auto;
   }
   button {
-    margin-left: 80px;
+    width: 100%;
   }
 }
 
@@ -272,16 +289,17 @@ a {
   }
 
   #text {
-    font-size: 1rem;
-    width: 300px;
-    margin: -40px auto;
+    font-size: 1.3rem;
+    width: auto;
+    margin: -80px auto;
     text-align: center;
   }
 
-  header p {
-    margin: 40px 10px;
+  header .header p {
+    margin: 40px 0 40px 10px;
   }
-  button {
-    margin-left: 60px;
+
+  .btn {
+    margin-top: 160px;
   }
 }
