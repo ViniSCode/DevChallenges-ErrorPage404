@@ -14,11 +14,11 @@ a responsive Webpage, adapted for desktop and mobile, this is the challenge of [
 
 - I used media queries in the project.
 - The site is responsive
-##  to see the solution [click here](https://dev-challenges-error-page404.vercel.app/)
+##  to see the solution [click here](https://dev-challenges-error-webpage404.vercel.app/)
 
 ### My Solution - Mobile
 ![enter image description here](https://github.com/ViniSCode/DevChallenges-ErrorPage404/blob/main/Images/Mobile.PNG?raw=true)
-##  to see the solution [click here](https://dev-challenges-error-page404.vercel.app/)
+##  to see the solution [click here](https://dev-challenges-error-webpage404.vercel.app/)
 
 ### My Design Ideas  - Dark
 ![enter image description here](https://github.com/ViniSCode/DevChallenges-ErrorPage404/blob/main/Images/darkTheme.PNG?raw=true)
